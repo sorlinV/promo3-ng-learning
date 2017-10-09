@@ -12,6 +12,11 @@ export class ChienService {
     .toPromise();
   }
 
+  getChien(id):Promise<Chien> {
+    return this.http.get<Chien>(this.urlAPI+'/'+id)
+    .toPromise();
+  }
+
   addChien(chien:Chien): Promise<Chien> {
     return this.http.post<Chien>(this.urlAPI, chien)
     .toPromise();

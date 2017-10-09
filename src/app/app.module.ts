@@ -16,6 +16,7 @@ import { ChienService } from './shared/chien/chien.service';
 import { RouterModule } from '@angular/router'
 import { appRoutes } from './app.routes';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { ChienComponent } from './chien/chien.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { NotfoundComponent } from './notfound/notfound.component';
     TodoComponent,
     TodoSecondComponent,
     ListeChienComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    ChienComponent
   ],
   imports: [
     BrowserModule,
